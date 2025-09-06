@@ -1,0 +1,111 @@
+{
+  "themes": {
+    "default": {
+      "sections": {
+        "default": {
+          "palette": "regal",
+          "scale": "default",
+          "background": "liner",
+          "typography": "default"
+        },
+        "error": {
+          "palette": "regal",
+          "scale": "default",
+          "background": "liner",
+          "typography": "default"
+        }
+      },
+      "palettes": {
+        "regal": {
+          "text": "#FCFAED",
+          "background": "#111818",
+          "shadow": "#000000",
+          "text-shadow": "#534260",
+          "accent-primary": "#534260",
+          "accent-secondary": "#FF9F1C",
+          "accent-shadow": "#FCFAED",
+          "transparent": "#00000000"
+        },
+        "parchment": {
+          "text": "#111818",
+          "background": "#FCFAED",
+          "shadow": "#000000"
+        }
+      },
+      "scales": {
+        "default": {
+          "text-body": "1rem",
+          "text-title": "3rem",
+          "text-subtitle": "1.5rem"
+        }
+      },
+      "fonts": {
+        "default": {
+          "family": "'Public Sans', sans-serif",
+          "import": "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        },
+        "subtitle": {
+          "family": "'Fragment Mono', monospace",
+          "import": "https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap"
+        },
+        "title": {
+          "family": "'Atkinson Hyperlegible', sans-serif",
+          "import": "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        }
+      },
+      "backgrounds": {
+        "liner": {
+          "img": {
+            "src": "/cel-tile.svg",
+            "mode": "tile",
+            "opacity": 0.33,
+            "colourMap": {
+              "logo-background": "transparent",
+              "logo-cutout": "shadow",
+              "logo-primary": "shadow",
+              "logo-secondary": "transparent"
+            }
+          },
+          "fill": "background"
+        }
+      },
+      "typography": {
+        "default": {
+          "body": {
+            "font": "default",
+            "size": "text-body",
+            "colour": "text"
+          },
+          "subtitle": {
+            "font": "subtitle",
+            "size": "text-subtitle",
+            "lineHeight": "2.5rem",
+            "style": "italic",
+            "colour": "text"
+          },
+          "title": {
+            "font": "title",
+            "size": "text-title",
+            "weight": "bold",
+            "lineHeight": "4rem",
+            "style": "italic",
+            "colour": "text",
+            "shadowColour": "text-shadow"
+          }
+        }
+      },
+      "graphics": {
+        "default": {
+          "titleAccent": {
+            "src": "/chevron.svg",
+            "colourMap": {
+              "img-fill-primary": "accent-primary",
+              "img-fill-secondary": "accent-secondary",
+              "img-shadow": "accent-shadow"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Carl Edward Lyons",
+  "subtitle": "Technoligist;\nScientist;\nEducator.",
+  "errors": {
+    "default": "Huh.",
+    "invalid": "You sure?",
+    "not_authenticated": "Do I know you?",
+    "forbidden": "Nope.",
+    "not_found": "Nothing to see here.",
+    "unexpected": "Something went terribly, terribly wrong."
+  }
+}
