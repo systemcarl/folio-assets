@@ -1,0 +1,36 @@
+{
+  "likes": [
+    { "icon": "pythonIcon", "text": "Code" },
+    { "icon": "batIcon", "text": "Bats" },
+    { "icon": "guitarIcon", "text": "Music" },
+    { "icon": "gamepadIcon", "text": "Games" }
+  ],
+  "dislikes": [
+    { "icon": "fistIcon", "text": "Fascism" },
+    { "icon": "scaleIcon", "text": "Inequality" },
+    { "icon": "mushroomIcon", "text": "Mushrooms" }
+  ],
+  "profileLinks": [
+    { "text": "More About Me", "href": "https://github.com/systemcarl" }
+  ],
+  "contact": [
+    {
+      "icon": "emailIcon",
+      "text": "Email: ",
+      "link": "carl@carledwardlyons.ca",
+      "href": "mailto:carl@carledwardlyons.ca"
+    },
+    {
+      "icon": "gitHubIcon",
+      "text": "GitHub: ",
+      "link": "systemcarl",
+      "href": "https://github.com/systemcarl"
+    },
+    {
+      "icon": "linkedInIcon",
+      "text": "LinkedIn: ",
+      "link": "celyons",
+      "href": "https://www.linkedin.com/in/celyons/"
+    }
+  ]
+}

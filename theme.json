@@ -8,6 +8,18 @@
           "background": "liner",
           "typography": "default"
         },
+        "profile": {
+          "palette": "regal",
+          "scale": "default",
+          "background": "liner",
+          "typography": "default"
+        },
+        "contact": {
+          "palette": "parchment",
+          "scale": "default",
+          "background": "watermark",
+          "typography": "default"
+        },
         "error": {
           "palette": "regal",
           "scale": "default",
@@ -18,25 +30,40 @@
       "palettes": {
         "regal": {
           "text": "#FCFAED",
+          "link": "#FF9F1C",
+          "border": "#FCFAED",
           "background": "#111818",
+          "highlight": "#FCFAED",
           "shadow": "#000000",
-          "text-shadow": "#534260",
-          "accent-primary": "#534260",
-          "accent-secondary": "#FF9F1C",
-          "accent-shadow": "#FCFAED",
+          "textShadow": "#534260",
+          "accentPrimary": "#534260",
+          "accentSecondary": "#FF9F1C",
+          "accentShadow": "#FCFAED",
+          "peach": "#EDC299",
+          "brown": "#794321",
+          "red": "#C5766D",
+          "blue": "#336283",
           "transparent": "#00000000"
         },
         "parchment": {
           "text": "#111818",
+          "link": "#534260",
+          "border": "#111818",
           "background": "#FCFAED",
-          "shadow": "#000000"
+          "highlight": "#FFFFFF",
+          "accentPrimary": "#534260",
+          "accentSecondary": "#FF9F1C",
+          "accentShadow": "#111818",
+          "transparent": "#00000000"
         }
       },
       "scales": {
         "default": {
-          "text-body": "1rem",
-          "text-title": "3rem",
-          "text-subtitle": "1.5rem"
+          "borderRadius": "0.25rem",
+          "borderWidth": "0.125rem",
+          "textBody": "1.125rem",
+          "textTitle": "3rem",
+          "textSubtitle": "1.5rem"
         }
       },
       "fonts": {
@@ -56,14 +83,28 @@
       "backgrounds": {
         "liner": {
           "img": {
-            "src": "/cel-tile.svg",
-            "mode": "tile",
+            "src": "/backgrounds/cel-tile.svg",
+            "mode": "cover",
             "opacity": 0.33,
             "colourMap": {
-              "logo-background": "transparent",
-              "logo-cutout": "shadow",
-              "logo-primary": "shadow",
-              "logo-secondary": "transparent"
+              "logoBackground": "transparent",
+              "logoCutout": "shadow",
+              "logoPrimary": "shadow",
+              "logoSecondary": "transparent"
+            }
+          },
+          "fill": "background"
+        },
+        "watermark": {
+          "img": {
+            "src": "/backgrounds/cel-watermark.svg",
+            "mode": "cover",
+            "opacity": 0.8,
+            "colourMap": {
+              "bgBackground": "highlight",
+              "bgCutout": "background",
+              "bgPrimary": "background",
+              "bgSecondary": "transparent"
             }
           },
           "fill": "background"
@@ -73,35 +114,169 @@
         "default": {
           "body": {
             "font": "default",
-            "size": "text-body",
+            "size": "textBody",
             "colour": "text"
           },
-          "subtitle": {
-            "font": "subtitle",
-            "size": "text-subtitle",
-            "lineHeight": "2.5rem",
-            "style": "italic",
-            "colour": "text"
+          "nav": {
+            "font": "default",
+            "size": "textSubtitle"
           },
           "title": {
             "font": "title",
-            "size": "text-title",
+            "size": "textTitle",
             "weight": "bold",
             "lineHeight": "4rem",
             "style": "italic",
             "colour": "text",
-            "shadowColour": "text-shadow"
+            "shadowColour": "textShadow"
+          },
+          "subtitle": {
+            "font": "subtitle",
+            "size": "textSubtitle",
+            "lineHeight": "2.5rem",
+            "style": "italic",
+            "colour": "text"
+          },
+          "heading2": {
+            "font": "default",
+            "size": "textTitle",
+            "weight": "bold",
+            "lineHeight": "4rem",
+            "style": "italic",
+            "colour": "text"
+          },
+          "tagline": {
+            "font": "title",
+            "size": "textSubtitle",
+            "lineHeight": "2rem",
+            "style": "italic",
+            "colour": "text"
+          },
+          "listHeader": {
+            "font": "default",
+            "size": "textSubtitle",
+            "weight": "bold",
+            "lineHeight": "2.5rem",
+            "colour": "text"
+          },
+          "listHeaderEmphasis": {
+            "font": "default",
+            "size": "textSubtitle",
+            "weight": "bold",
+            "lineHeight": "2.5rem",
+            "style": "italic",
+            "colour": "link",
+            "shadowColour": "textShadow"
+          },
+          "link": {
+            "style": "italic",
+            "colour": "link",
+            "textDecoration": "underline"
           }
         }
       },
       "graphics": {
         "default": {
+          "frame": {
+            "src": "/frame.svg",
+            "colourMap": {
+              "imgPrimary": "accentPrimary",
+              "imgSecondary": "accentSecondary",
+              "imgShadow": "accentShadow"
+            }
+          },
+          "avatar": {
+            "src": "/avatar.svg",
+            "colourMap": {
+              "imgPrimary": "accentPrimary",
+              "imgSecondary": "accentSecondary",
+              "imgOutline": "shadow",
+              "imgHighlight": "highlight",
+              "imgSkin": "peach",
+              "imgHair": "brown",
+              "imgMouth": "red",
+              "imgTeeth": "highlight",
+              "imgEyes": "highlight",
+              "imgIris": "blue",
+              "imgBackground": "shadow",
+              "imgBackgroundFill": "background"
+            }
+          },
           "titleAccent": {
             "src": "/chevron.svg",
             "colourMap": {
-              "img-fill-primary": "accent-primary",
-              "img-fill-secondary": "accent-secondary",
-              "img-shadow": "accent-shadow"
+              "imgPrimary": "accentPrimary",
+              "imgSecondary": "accentSecondary",
+              "imgShadow": "accentShadow"
+            }
+          },
+          "batIcon": {
+            "src": "/icons/bat.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary"
+            }
+          },
+          "emailIcon": {
+            "src": "/icons/email.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "fistIcon": {
+            "src": "/icons/fist.svg",
+            "colourMap": {
+              "iconPrimary": "accentSecondary",
+              "iconSecondary": "accentPrimary"
+            }
+          },
+          "gamepadIcon": {
+            "src": "/icons/gamepad.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "gitHubIcon": {
+            "src": "/icons/github.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "guitarIcon": {
+            "src": "/icons/guitar.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "linkedInIcon": {
+            "src": "/icons/linkedin.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "mushroomIcon": {
+            "src": "/icons/mushroom.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "pythonIcon": {
+            "src": "/icons/python.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "scaleIcon": {
+            "src": "/icons/scale.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
             }
           }
         }
