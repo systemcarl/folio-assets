@@ -11,7 +11,7 @@
     { "icon": "mushroomIcon", "text": "Mushrooms" }
   ],
   "profileLinks": [
-    { "text": "More About Me", "href": "https://github.com/systemcarl" }
+    { "text": "More About Me", "href": "./articles/about-me" }
   ],
   "contact": [
     {
@@ -32,5 +32,8 @@
       "link": "celyons",
       "href": "https://www.linkedin.com/in/celyons/"
     }
-  ]
+  ],
+  "weblog": {
+    "url": "https://raw.githubusercontent.com/systemcarl/weblog/main/"
+  }
 }

@@ -11,12 +11,20 @@
     "header": "Contact",
     "infoHeader": "Got questions? Find me here:"
   },
+  "nav": {
+    "home": "#About",
+    "contact": "#Contact"
+  },
+  "meta": {
+    "title": "Carl Edward Lyons",
+    "description": "Personal website of Carl Edward Lyons, a technologist, scientist, and educator."
+  },
   "errors": {
     "default": "Huh.",
     "invalid": "You sure?",
-    "not_authenticated": "Do I know you?",
+    "notAuthenticated": "Do I know you?",
     "forbidden": "Nope.",
-    "not_found": "Nothing to see here.",
+    "notFound": "Nothing to see here.",
     "unexpected": "Something went terribly, terribly wrong."
   }
 }

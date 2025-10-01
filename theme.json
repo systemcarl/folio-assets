@@ -20,6 +20,18 @@
           "background": "watermark",
           "typography": "default"
         },
+        "article": {
+          "palette": "parchment",
+          "scale": "default",
+          "background": "git",
+          "typography": "default"
+        },
+        "footer": {
+          "palette": "regal",
+          "scale": "default",
+          "background": "watermark",
+          "typography": "default"
+        },
         "error": {
           "palette": "regal",
           "scale": "default",
@@ -43,6 +55,7 @@
           "brown": "#794321",
           "red": "#C5766D",
           "blue": "#336283",
+          "watermark": "#00000088",
           "transparent": "#00000000"
         },
         "parchment": {
@@ -54,16 +67,21 @@
           "accentPrimary": "#534260",
           "accentSecondary": "#FF9F1C",
           "accentShadow": "#111818",
+          "watermark": "#FFFFFF",
           "transparent": "#00000000"
         }
       },
       "scales": {
         "default": {
+          "spacing": "2rem",
           "borderRadius": "0.25rem",
           "borderWidth": "0.125rem",
           "textBody": "1.125rem",
           "textTitle": "3rem",
-          "textSubtitle": "1.5rem"
+          "textSubtitle": "1.5rem",
+          "textHeading": "2.25rem",
+          "textSubHeading": "1.75rem",
+          "superscript": "0.75em"
         }
       },
       "fonts": {
@@ -95,13 +113,27 @@
           },
           "fill": "background"
         },
+        "git": {
+          "img": {
+            "src": "/backgrounds/git-timeline.svg",
+            "mode": "cover",
+            "opacity": 0.2,
+            "colourMap": {
+              "bg-primary": "accentPrimary",
+              "bg-secondary": "accentSecondary",
+              "bg-tertiary": "text",
+              "bg-quaternary": "accentPrimary"
+            }
+          },
+          "fill": "background"
+        },
         "watermark": {
           "img": {
             "src": "/backgrounds/cel-watermark.svg",
             "mode": "cover",
             "opacity": 0.8,
             "colourMap": {
-              "bgBackground": "highlight",
+              "bgBackground": "watermark",
               "bgCutout": "background",
               "bgPrimary": "background",
               "bgSecondary": "transparent"
@@ -137,11 +169,32 @@
             "style": "italic",
             "colour": "text"
           },
-          "heading2": {
-            "font": "default",
+          "heading1": {
+            "font": "title",
             "size": "textTitle",
             "weight": "bold",
             "lineHeight": "4rem",
+            "colour": "text"
+          },
+          "heading2": {
+            "font": "default",
+            "size": "textHeading",
+            "weight": "bold",
+            "lineHeight": "3rem",
+            "style": "italic",
+            "colour": "text"
+          },
+          "heading3": {
+            "font": "default",
+            "size": "textSubHeading",
+            "weight": "bold",
+            "lineHeight": "2rem",
+            "colour": "text"
+          },
+          "heading4": {
+            "font": "default",
+            "size": "text",
+            "weight": "bold",
             "style": "italic",
             "colour": "text"
           },
@@ -172,17 +225,25 @@
             "style": "italic",
             "colour": "link",
             "textDecoration": "underline"
+          },
+          "ref": {
+            "size": "superscript",
+            "weight": "normal",
+            "style": "normal",
+            "colour": "link",
+            "textDecoration": "none"
           }
         }
       },
       "graphics": {
         "default": {
-          "frame": {
-            "src": "/frame.svg",
+          "logo": {
+            "src": "/cel.svg",
             "colourMap": {
-              "imgPrimary": "accentPrimary",
-              "imgSecondary": "accentSecondary",
-              "imgShadow": "accentShadow"
+              "logoBackground": "highlight",
+              "logoCutout": "accentSecondary",
+              "logoPrimary": "accentPrimary",
+              "logoSecondary": "accentSecondary"
             }
           },
           "avatar": {
@@ -197,13 +258,19 @@
               "imgMouth": "red",
               "imgTeeth": "highlight",
               "imgEyes": "highlight",
-              "imgIris": "blue",
-              "imgBackground": "shadow",
-              "imgBackgroundFill": "background"
+              "imgIris": "blue"
             }
           },
           "titleAccent": {
             "src": "/chevron.svg",
+            "colourMap": {
+              "imgPrimary": "accentPrimary",
+              "imgSecondary": "accentSecondary",
+              "imgShadow": "accentShadow"
+            }
+          },
+          "frame": {
+            "src": "/frame.svg",
             "colourMap": {
               "imgPrimary": "accentPrimary",
               "imgSecondary": "accentSecondary",
