@@ -81,7 +81,8 @@
           "textSubtitle": "1.5rem",
           "textHeading": "2.25rem",
           "textSubHeading": "1.75rem",
-          "superscript": "0.75em"
+          "textCode": "0.9rem",
+          "textSuperscript": "0.75em"
         }
       },
       "fonts": {
@@ -96,6 +97,10 @@
         "title": {
           "family": "'Atkinson Hyperlegible', sans-serif",
           "import": "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        },
+        "code": {
+          "family": "'Fragment Mono', monospace",
+          "import": "https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap"
         }
       },
       "backgrounds": {
@@ -227,11 +232,45 @@
             "textDecoration": "underline"
           },
           "ref": {
-            "size": "superscript",
+            "size": "textSuperscript",
             "weight": "normal",
             "style": "normal",
             "colour": "link",
             "textDecoration": "none"
+          },
+          "code": {
+            "font": "code",
+            "size": "textCode",
+            "bgColour" : "highlight"
+          },
+          "codeKeyword": {
+            "colour": "accentPrimary",
+            "style": "italic"
+          },
+          "codeName": {
+            "colour": "text"
+          },
+          "codeTitle": {
+            "colour": "accentPrimary"
+          },
+          "codeTag": {
+            "colour": "accentPrimary"
+          },
+          "codeSelectorClass": {
+            "colour": "accentPrimary"
+          },
+          "codeAttr": {
+            "colour": "accentPrimary"
+          },
+          "codeProperty": {
+            "colour": "accentPrimary"
+          },
+          "codeString": {
+            "style": "italic"
+          },
+          "codeComment": {
+            "colour": "accentSecondary",
+            "style": "italic"
           }
         }
       },
