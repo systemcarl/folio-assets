@@ -238,6 +238,37 @@
             "colour": "link",
             "textDecoration": "none"
           },
+          "note": {
+            "style": "italic",
+            "colour": "text",
+            "bgColour": "highlight"
+          },
+          "alert": {
+            "font": "subtitle",
+            "size": "textSuperscript",
+            "weight": "bold",
+            "style": "italic"
+          },
+          "alertNote": {
+            "colour": "accentPrimary",
+            "bgColour": "highlight"
+          },
+          "alertTip": {
+            "colour": "accentPrimary",
+            "bgColour": "highlight"
+          },
+          "alertImportant": {
+            "colour": "accentPrimary",
+            "bgColour": "highlight"
+          },
+          "alertWarning": {
+            "colour": "accentSecondary",
+            "bgColour": "highlight"
+          },
+          "alertCaution": {
+            "colour": "accentSecondary",
+            "bgColour": "highlight"
+          },
           "code": {
             "font": "code",
             "size": "textCode",
