@@ -353,6 +353,13 @@
               "iconPrimary": "accentPrimary"
             }
           },
+          "blueskyIcon": {
+            "src": "/icons/bluesky.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
           "emailIcon": {
             "src": "/icons/email.svg",
             "colourMap": {
@@ -390,6 +397,13 @@
           },
           "linkedInIcon": {
             "src": "/icons/linkedin.svg",
+            "colourMap": {
+              "iconPrimary": "accentPrimary",
+              "iconSecondary": "accentSecondary"
+            }
+          },
+          "mastodonIcon": {
+            "src": "/icons/mastodon.svg",
             "colourMap": {
               "iconPrimary": "accentPrimary",
               "iconSecondary": "accentSecondary"

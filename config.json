@@ -27,6 +27,18 @@
       "href": "https://github.com/systemcarl"
     },
     {
+      "icon": "blueskyIcon",
+      "text": "Bluesky: ",
+      "link": "@carledwardlyons.ca",
+      "href": "https://bsky.app/profile/carledwardlyons.ca"
+    },
+    {
+      "icon": "mastodonIcon",
+      "text": "Mastodon: ",
+      "link": "carledwardlyons​@techhub.social",
+      "href": "https://techhub.social/@carledwardlyons"
+    },
+    {
       "icon": "linkedInIcon",
       "text": "LinkedIn: ",
       "link": "celyons",
