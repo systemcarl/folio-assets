@@ -14,6 +14,18 @@
           "background": "liner",
           "typography": "default"
         },
+        "highlightTagFeatured": {
+          "palette": "parchment",
+          "scale": "default",
+          "background": "code",
+          "typography": "default"
+        },
+        "highlightTagDevlog": {
+          "palette": "regal",
+          "scale": "default",
+          "background": "git",
+          "typography": "default"
+        },
         "contact": {
           "palette": "parchment",
           "scale": "default",
@@ -80,7 +92,6 @@
           "textTitle": "3rem",
           "textSubtitle": "1.5rem",
           "textHeading": "2.25rem",
-          "textSubHeading": "1.75rem",
           "textCode": "0.9rem",
           "textSuperscript": "0.75em"
         }
@@ -114,6 +125,20 @@
               "logoCutout": "shadow",
               "logoPrimary": "shadow",
               "logoSecondary": "transparent"
+            }
+          },
+          "fill": "background"
+        },
+        "code": {
+          "img": {
+            "src": "/backgrounds/codewall.svg",
+            "mode": "cover",
+            "opacity": 0.15,
+            "colourMap": {
+              "bg-primary": "accentPrimary",
+              "bg-secondary": "accentSecondary",
+              "bg-tertiary": "text",
+              "bg-quaternary": "accentPrimary"
             }
           },
           "fill": "background"
@@ -191,7 +216,7 @@
           },
           "heading3": {
             "font": "default",
-            "size": "textSubHeading",
+            "size": "textSubtitle",
             "weight": "bold",
             "lineHeight": "2rem",
             "colour": "text"

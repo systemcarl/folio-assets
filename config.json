@@ -13,6 +13,20 @@
   "profileLinks": [
     { "text": "More About Me", "href": "./articles/about-me" }
   ],
+  "highlights": [
+    {
+      "id": "featured",
+      "type": "tag",
+      "key": "featured",
+      "section": "highlightTagFeatured"
+    },
+    {
+      "id": "devlogs",
+      "type": "tag",
+      "key": "devlog",
+      "section": "highlightTagDevlog"
+    }
+  ],
   "contact": [
     {
       "icon": "emailIcon",
