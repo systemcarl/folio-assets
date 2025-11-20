@@ -108,7 +108,7 @@
           "img": {
             "src": "/backgrounds/cel-tile.svg",
             "mode": "cover",
-            "opacity": 0.33,
+            "opacity": 0.25,
             "colourMap": {
               "logoBackground": "transparent",
               "logoCutout": "shadow",
@@ -122,7 +122,7 @@
           "img": {
             "src": "/backgrounds/git-timeline.svg",
             "mode": "cover",
-            "opacity": 0.2,
+            "opacity": 0.15,
             "colourMap": {
               "bg-primary": "accentPrimary",
               "bg-secondary": "accentSecondary",
@@ -136,7 +136,7 @@
           "img": {
             "src": "/backgrounds/cel-watermark.svg",
             "mode": "cover",
-            "opacity": 0.8,
+            "opacity": 0.6,
             "colourMap": {
               "bgBackground": "watermark",
               "bgCutout": "background",
