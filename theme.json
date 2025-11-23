@@ -353,7 +353,9 @@
               "imgMouth": "red",
               "imgTeeth": "highlight",
               "imgEyes": "highlight",
-              "imgIris": "blue"
+              "imgIris": "blue",
+              "imgBackground": "shadow",
+              "imgBackgroundFill": "background"
             }
           },
           "titleAccent": {
