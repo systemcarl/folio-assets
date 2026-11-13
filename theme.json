@@ -18,13 +18,15 @@
           "palette": "parchment",
           "scale": "default",
           "background": "code",
-          "typography": "default"
+          "typography": "default",
+          "scrim" : true
         },
         "highlightTagDevlog": {
           "palette": "regal",
           "scale": "default",
           "background": "git",
-          "typography": "default"
+          "typography": "default",
+          "scrim" : true
         },
         "contact": {
           "palette": "parchment",
@@ -36,7 +38,15 @@
           "palette": "parchment",
           "scale": "default",
           "background": "git",
-          "typography": "default"
+          "typography": "default",
+          "scrim" : true
+        },
+        "collection": {
+          "palette": "regal",
+          "scale": "default",
+          "background": "git",
+          "typography": "default",
+          "scrim" : true
         },
         "footer": {
           "palette": "regal",
@@ -92,6 +102,7 @@
           "textTitle": "3rem",
           "textSubtitle": "1.5rem",
           "textHeading": "2.25rem",
+          "textDetail": "1.1rem",
           "textCode": "0.9rem",
           "textSuperscript": "0.75em"
         }
@@ -177,6 +188,12 @@
           "body": {
             "font": "default",
             "size": "textBody",
+            "colour": "text"
+          },
+          "detail": {
+            "font": "default",
+            "size": "textDetail",
+            "style": "italic",
             "colour": "text"
           },
           "nav": {

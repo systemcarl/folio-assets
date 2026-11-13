@@ -18,12 +18,24 @@
       "id": "featured",
       "type": "tag",
       "key": "featured",
+      "count": 3,
+      "title": "Featured",
+      "links": [{
+        "href": "/collections/featured",
+        "text": "See All Featured"
+      }],
       "section": "highlightTagFeatured"
     },
     {
       "id": "devlogs",
       "type": "tag",
       "key": "devlog",
+      "count": 3,
+      "title": "DevLogs",
+      "links": [{
+        "href": "/collections/devlog",
+        "text": "Browse DevLogs"
+      }],
       "section": "highlightTagDevlog"
     }
   ],
@@ -60,6 +72,8 @@
     }
   ],
   "weblog": {
-    "url": "https://raw.githubusercontent.com/systemcarl/weblog/main/"
+    "url": "https://raw.githubusercontent.com/systemcarl/weblog/main/",
+    "topCredits": ["author"],
+    "bottomCredits": ["editor"]
   }
 }

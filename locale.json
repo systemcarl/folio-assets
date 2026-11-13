@@ -11,12 +11,16 @@
     "header": "Contact",
     "infoHeader": "Got questions? Find me here:"
   },
+  "collections" : {
+    "tagPrefix" : "#"
+  },
   "nav": {
     "home": "#About",
     "highlights": {
       "featured": "#Featured",
       "devlogs": "#DevLogs"
     },
+    "allArticles": "#Articles",
     "contact": "#Contact"
   },
   "meta": {
